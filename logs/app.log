@@ -1,0 +1,31 @@
+{"level":"info","message":"GET /api/v1/movies/ 200 17ms","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"94454f40-c4db-42f2-93b9-1fc87c1cc871","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":17},"timestamp":"2022-06-24T14:50:58.518Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 9ms","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"97fb6829-b5ca-47ea-bafb-38e3403bd20b","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":9},"timestamp":"2022-06-24T14:51:36.432Z"}
+{"level":"info","message":"\u001b[90mGET /api/v1/movies/\u001b[39m \u001b[32m200\u001b[39m \u001b[90m15ms\u001b[39m","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"d57c9e07-91ad-48af-accc-1773407cb2c4","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":15},"timestamp":"2022-06-24T14:53:02.591Z"}
+{"level":"info","message":"HTTP GET /api/v1/movies/","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"9399f968-9f73-46ae-97b9-1b66cf8ed1c3","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":19},"timestamp":"2022-06-24T14:53:23.687Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"HTTP GET /api/v1/movies/","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"48d9258c-5345-44cc-b043-54aeda668fd2","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":16},"timestamp":"2022-06-24T14:56:28.168Z"}
+{"level":"info","message":"HTTP","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"f95fda54-db2e-4fc7-a820-229163f553c4","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":20},"timestamp":"2022-06-24T14:58:21.527Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 17ms","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"3b7c09ef-2136-46bd-994e-18661e661df9","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":17},"timestamp":"2022-06-24T14:58:56.216Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 13ms","meta":{"req":{"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","host":"localhost:3000","postman-token":"1854a66b-1a67-4ded-a6ae-f107e1ad4d6a","user-agent":"PostmanRuntime/7.29.0"},"httpVersion":"1.1","method":"GET","originalUrl":"/api/v1/movies/","query":{},"url":"/api/v1/movies/"},"res":{"statusCode":200},"responseTime":13},"timestamp":"2022-06-24T14:59:21.158Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 15ms","meta":{},"timestamp":"2022-06-24T14:59:50.968Z"}
+{"level":"info","message":"GET /api/v1/movies/asdasdasd 500 10ms","meta":{},"timestamp":"2022-06-24T15:02:21.624Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 13ms","meta":{},"timestamp":"2022-06-24T15:06:54.878Z"}
+{"level":"info","message":"GET /api/v1/movies/asdasdasd 500 6ms","meta":{},"timestamp":"2022-06-24T15:07:19.885Z"}
+{"level":"info","message":"GET /api/v1/moviess 404 6ms","meta":{},"timestamp":"2022-06-24T15:07:36.662Z"}
+{"level":"info","message":"GET /api/v1/movies/ 200 4ms","meta":{},"timestamp":"2022-06-24T15:07:56.030Z"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ \u001b[32m200\u001b[39m 12ms","meta":{},"timestamp":"2022-06-24T15:11:35.877Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"HTTP GET /api/v1/movies/ \u001b[32m200\u001b[39m 12ms","meta":{},"timestamp":"2022-06-24T15:12:03.433Z"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 13ms","meta":{},"timestamp":"2022-06-24T15:12:49.160Z"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 12ms","meta":{},"timestamp":"2022-06-24 22:13:20"}
+{"level":"info","message":"HTTP GET /api/v1/movies/2 400 5ms","meta":{},"timestamp":"2022-06-24 22:16:48"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 7ms","meta":{},"timestamp":"2022-06-24 22:17:03"}
+{"level":"info","message":"HTTP GET /api/v1/movies/1 200 3ms","meta":{},"timestamp":"2022-06-24 22:17:07"}
+{"level":"info","message":"HTTP GET /api/v1/movies/2 400 2ms","meta":{},"timestamp":"2022-06-24 22:17:23"}
+{"level":"info","message":"HTTP GET /api/v1/movies/2 400 9ms","meta":{},"timestamp":"2022-06-24 22:18:53"}
+{"level":"info","message":"HTTP GET /api/v1/movies/2 400 9ms","meta":{},"timestamp":"2022-06-24 22:20:55"}
+{"level":"info","message":"HTTP GET /api/v1/movies/2 400 5ms","meta":{},"timestamp":"2022-06-24 22:21:00"}
+{"level":"info","message":"HTTP GET /api/v1/movies/1 200 43ms","meta":{},"timestamp":"2022-06-24 22:21:05"}
+{"level":"info","message":"HTTP GET /api/v1/movies/1 200 14ms","meta":{},"timestamp":"2022-06-24 22:25:00"}
+{"level":"error","message":"HTTP GET /api/v1/movies/1as 500 6ms","meta":{},"timestamp":"2022-06-24 22:25:06"}
+{"level":"warn","message":"HTTP GET /api/v1/movies/2 400 17ms","meta":{},"timestamp":"2022-06-24 22:25:17"}
+{"level":"error","message":"HTTP GET /api/v1/movies/2as 500 3ms","meta":{},"timestamp":"2022-06-24 22:25:35"}
+{"level":"info","message":"HTTP GET /api/v1/movies/1 200 5ms","meta":{},"timestamp":"2022-06-24 22:25:50"}
