@@ -29,3 +29,12 @@
 {"level":"warn","message":"HTTP GET /api/v1/movies/2 400 17ms","meta":{},"timestamp":"2022-06-24 22:25:17"}
 {"level":"error","message":"HTTP GET /api/v1/movies/2as 500 3ms","meta":{},"timestamp":"2022-06-24 22:25:35"}
 {"level":"info","message":"HTTP GET /api/v1/movies/1 200 5ms","meta":{},"timestamp":"2022-06-24 22:25:50"}
+{"level":"info","message":"HTTP POST /api/v1/movies/ 200 33ms","meta":{},"timestamp":"2022-06-26 14:32:28"}
+{"level":"info","message":"HTTP POST /api/v1/movies/ 200 115ms","meta":{},"timestamp":"2022-06-26 14:32:39"}
+{"level":"info","message":"HTTP GET /api/v1/movies/sort/asc 200 18ms","meta":{},"timestamp":"2022-06-26 14:33:22"}
+{"level":"info","message":"HTTP GET /api/v1/movies/sort/desc 200 12ms","meta":{},"timestamp":"2022-06-26 14:33:38"}
+{"level":"info","message":"HTTP POST /api/v1/schedules/ 200 15ms","meta":{},"timestamp":"2022-06-26 14:34:04"}
+{"level":"info","message":"HTTP GET /api/v1/schedules/ 200 70ms","meta":{},"timestamp":"2022-06-26 14:34:14"}
+{"level":"info","message":"HTTP POST /api/v1/booking/ 200 66ms","meta":{},"timestamp":"2022-06-26 14:34:49"}
+{"level":"info","message":"HTTP GET /api/v1/booking/ 200 9ms","meta":{},"timestamp":"2022-06-26 14:34:57"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 31ms","meta":{},"timestamp":"2022-06-27 00:53:07"}

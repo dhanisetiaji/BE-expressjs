@@ -49,6 +49,7 @@ const add = async (req, res) => {
     })
 }
 
+
 const update = async (req, res) => {
     return new Promise((resolve, reject) => {
         db.query(`SELECT * from booking where id=${req.params.id}`, (err, results) => {

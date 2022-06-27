@@ -7,7 +7,7 @@ const router = require('./routes/index')
 // const logger = require('./middlewares/logger')
 const { format, transports } = require('winston'),
     expressWinston = require('express-winston');
-const { timestamp, combine, errors, json, colorize } = format
+const { timestamp, combine, errors, json } = format
 
 // app.use((req, res, next) => {
 //     res.append("Set-Cookie", "HttpOnly;Secure;SameSite=Strict")
