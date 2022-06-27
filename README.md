@@ -6,7 +6,7 @@
 
 ## Documentation
 
- [![Documentation][docs]
+ [![Documentation]][docs]
 
 ## Database design
 
