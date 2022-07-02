@@ -17,7 +17,12 @@ const get = async (req, res) => {
                     success: true,
                     status: 200,
                     message: 'successfully get data',
-                    data: results
+                    data: results.map(result => {
+                        return {
+                            ...result,
+                            release_date: result.release_date.toISOString().split('T')[0]
+                        }
+                    })
                 })
             }
         })
@@ -47,7 +52,12 @@ const getById = async (req, res) => {
                     success: true,
                     status: 200,
                     message: 'successfully get data',
-                    data: results
+                    data: results.map(result => {
+                        return {
+                            ...result,
+                            release_date: result.release_date.toISOString().split('T')[0]
+                        }
+                    })
                 })
             }
         })
@@ -229,7 +239,12 @@ const sort = async (req, res) => {
                     status: 200,
                     sortBy: querysort,
                     message: 'successfully get data',
-                    data: results
+                    data: results.map(result => {
+                        return {
+                            ...result,
+                            release_date: result.release_date.toISOString().split('T')[0]
+                        }
+                    })
                 })
             }
         });

@@ -38,3 +38,17 @@
 {"level":"info","message":"HTTP POST /api/v1/booking/ 200 66ms","meta":{},"timestamp":"2022-06-26 14:34:49"}
 {"level":"info","message":"HTTP GET /api/v1/booking/ 200 9ms","meta":{},"timestamp":"2022-06-26 14:34:57"}
 {"level":"info","message":"HTTP GET /api/v1/movies/ 200 31ms","meta":{},"timestamp":"2022-06-27 00:53:07"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 397ms","meta":{},"timestamp":"2022-06-28 11:33:51"}
+{"level":"info","message":"HTTP GET /api/v1/movies/1 200 103ms","meta":{},"timestamp":"2022-06-28 11:34:10"}
+{"level":"warn","message":"HTTP GET /api/v1/movies/10 400 58ms","meta":{},"timestamp":"2022-06-28 11:34:17"}
+{"level":"info","message":"HTTP POST /api/v1/movies/ 200 70ms","meta":{},"timestamp":"2022-06-28 11:34:32"}
+{"level":"info","message":"HTTP PATCH /api/v1/movies/3 200 145ms","meta":{},"timestamp":"2022-06-28 11:35:12"}
+{"level":"info","message":"HTTP GET /api/v1/movies/ 200 3ms","meta":{},"timestamp":"2022-06-28 11:35:17"}
+{"level":"info","message":"HTTP DELETE /api/v1/movies/3 200 69ms","meta":{},"timestamp":"2022-06-28 11:35:44"}
+{"level":"warn","message":"HTTP DELETE /api/v1/movies/4 400 4ms","meta":{},"timestamp":"2022-06-28 11:35:54"}
+{"level":"info","message":"HTTP POST /api/v1/movies/search 200 39ms","meta":{},"timestamp":"2022-06-28 11:36:23"}
+{"level":"warn","message":"HTTP POST /api/v1/movies/search 400 14ms","meta":{},"timestamp":"2022-06-28 11:36:33"}
+{"level":"info","message":"HTTP GET /api/v1/movies/sort/asc 200 19ms","meta":{},"timestamp":"2022-06-28 11:36:45"}
+{"level":"info","message":"HTTP GET /api/v1/movies/sort/desc 200 10ms","meta":{},"timestamp":"2022-06-28 11:36:56"}
+{"level":"info","message":"HTTP GET /api/v1/schedules/ 200 112ms","meta":{},"timestamp":"2022-06-28 11:41:06"}
+{"level":"info","message":"HTTP GET /api/v1/booking/ 200 76ms","meta":{},"timestamp":"2022-06-28 11:42:49"}
