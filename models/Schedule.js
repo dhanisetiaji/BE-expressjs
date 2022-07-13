@@ -1,30 +1,11 @@
 const db = require('../helpers/db')
 
-// const get = async () => {
-//     return new Promise((resolve, reject) => {
-//         db.query('SELECT * FROM schedules', (err, results) => {
-//             if (err) {
-//                 reject({
-//                     success: false,
-//                     status: 500,
-//                     message: 'Error!',
-//                     data: err
-//                 })
-//             } else {
-//                 resolve({
-//                     success: true,
-//                     status: 200,
-//                     message: 'successfully get data',
-//                     data: results
-//                 })
-//             }
-//         })
-//     })
-// }
 
-const get = async () => {
+
+const get = async (req, res) => {
+    const { movieId } = req.query
     return new Promise((resolve, reject) => {
-        db.query(`SELECT a.*,b.name_cinema,b.address_cinema,b.image_cinema from schedules as a JOIN cinemas AS b WHERE a.id_cinema = b.id`,
+        db.query(`SELECT a.*,b.id,b.name_cinema,b.address_cinema,b.image_cinema,c.* from schedules as a JOIN cinemas AS b ON b.id = a.id_cinema INNER JOIN movie AS c ON c.id = a.id_movie  ${movieId ? `WHERE a.id_movie=${movieId}` : ''}`,
             (err, results) => {
                 if (err) {
                     reject({

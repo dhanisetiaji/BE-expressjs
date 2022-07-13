@@ -4,10 +4,10 @@ const cors = require('cors')
 require('dotenv').config();
 const app = express()
 const router = require('./routes/index')
-// const logger = require('./middlewares/logger')
 const { format, transports } = require('winston'),
     expressWinston = require('express-winston');
 const { timestamp, combine, errors, json } = format
+const path = require('path')
 
 // app.use((req, res, next) => {
 //     res.append("Set-Cookie", "HttpOnly;Secure;SameSite=Strict")
@@ -29,6 +29,7 @@ app.use(expressWinston.logger({
     statusLevels: true,
     ignoreRoute: function (req, res) { return false; }
 }))
+app.use('/static', express.static(path.join(__dirname, 'uploads')))
 app.use('/api/v1', router)
 
 app.get('/', (req, res) => res.send('Services working perfectly.'))
