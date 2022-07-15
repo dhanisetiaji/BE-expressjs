@@ -1,7 +1,7 @@
 const { SendEmail } = require("../helpers/welcomemail");
 const { reSendEmail } = require("../helpers/resendmail");
 const { forgotEmail } = require("../helpers/forgotmail");
-const { register, login, verify, reSend, forgotmail, changepassword } = require("../models/Auth");
+const { register, login, verify, reSend, forgotmail, changepassword, refreshToken, verifyToken } = require("../models/Auth");
 
 function randstr(length) {
     let result = '';
@@ -15,7 +15,7 @@ function randstr(length) {
 
 const registerUser = async (req, res) => {
     try {
-        let code = await randstr(20);
+        let code = randstr(20);
         const reqModified = {
             ...req,
             body: {
@@ -137,11 +137,37 @@ const changePassword = async (req, res) => {
     }
 }
 
+const refreshTokenAuth = async (req, res) => {
+    try {
+        const result = await refreshToken(req, res);
+        return res.status(200).json(result);
+    } catch (error) {
+        if (error.status === 400) {
+            return res.status(400).json(error);
+        }
+        return res.status(500).json(error);
+    }
+}
+
+const verifyTokenAuth = async (req, res) => {
+    try {
+        const result = await verifyToken(req, res);
+        return res.status(200).json(result);
+    } catch (error) {
+        if (error.status === 400) {
+            return res.status(400).json(error);
+        }
+        return res.status(500).json(error);
+    }
+}
+
 module.exports = {
     registerUser,
     verifyUser,
     loginUser,
     resendEmail,
     forgotMail,
-    changePassword
+    changePassword,
+    refreshTokenAuth,
+    verifyTokenAuth,
 }

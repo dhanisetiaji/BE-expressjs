@@ -310,11 +310,76 @@ const changepassword = async (req, res) => {
     })
 }
 
+const refreshToken = async (req, res) => {
+    const { token } = req.body
+    return new Promise((resolve, reject) => {
+        jwt.verify(token, process.env.SECRET_KEY_JWT, (err, decoded) => {
+            if (err) {
+                reject({
+                    success: false,
+                    status: 500,
+                    message: err.sqlMessage,
+                    data: {
+                        errCode: err.code,
+                        errNo: err.errno
+                    }
+                })
+            } else {
+                const token = jwt.sign({
+                    id: decoded.id,
+                    email: decoded.email,
+                    role: decoded.role,
+                }, process.env.SECRET_KEY_JWT, { expiresIn: process.env.JWT_EXPIRE })
+                resolve({
+                    success: true,
+                    status: 200,
+                    message: 'Successfully refresh token!',
+                    data: {
+                        token: token,
+                    }
+                })
+            }
+        })
+    })
+}
+
+const verifyToken = async (req, res) => {
+    const { token } = req.body
+    return new Promise((resolve, reject) => {
+        jwt.verify(token, process.env.SECRET_KEY_JWT, (err, decoded) => {
+            if (err) {
+                reject({
+                    success: false,
+                    status: 500,
+                    message: err.sqlMessage,
+                    data: {
+                        errCode: err.code,
+                        errNo: err.errno
+                    }
+                })
+            } else {
+                resolve({
+                    success: true,
+                    status: 200,
+                    message: 'Successfully verify token!',
+                    data: {
+                        id: decoded.id,
+                        email: decoded.email,
+                        role: decoded.role,
+                    }
+                })
+            }
+        })
+    })
+}
+
 module.exports = {
     register,
     verify,
     login,
     reSend,
     forgotmail,
-    changepassword
+    changepassword,
+    refreshToken,
+    verifyToken,
 }

@@ -350,3 +350,5 @@
 {"level":"info","message":"HTTP POST /api/v1/auth/change-password?code=gYx4S96dT81j1EOnSt50&email=invokerplayed@gmail.com 200 45ms","meta":{},"timestamp":"2022-07-13 23:59:29"}
 {"level":"warn","message":"HTTP POST /api/v1/auth/change-password?code=gYx4S96dT81j1EOnSt50&email=invokerplayedd@gmail.com 400 19ms","meta":{},"timestamp":"2022-07-14 00:01:12"}
 {"level":"warn","message":"HTTP POST /api/v1/auth/change-password?code=gYx4S96dT81j1EOnSt50&email=invokerplayed@gmail.com 400 11ms","meta":{},"timestamp":"2022-07-14 00:01:23"}
+{"level":"warn","message":"HTTP POST /api/v1/auth/change-password?code=gYx4S96dT81j1EOnSt50&email=invokerplayed@gmail.com 400 32ms","meta":{},"timestamp":"2022-07-14 00:15:29"}
+{"level":"info","message":"HTTP GET /api/v1/movies?q=spider&date=06-29&orderBy=desc&page=1&limit=5 200 15ms","meta":{},"timestamp":"2022-07-14 00:15:35"}
