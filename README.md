@@ -1,34 +1,21 @@
 ## Features
- * CRUD Movie, Booking, Schedule
+ * CRUD
  * Get By Id/name Movie
- * Sort asc/desc movie
+ * Search
+ * OrderBy asc/desc movie
+ * JWT
+ * CRYPTOJS
+ * MAIL WITH SENDINBLUE
  * Logger with winston
+ * etc
 
 ## Documentation
 
  [![Documentation]][docs]
 
-## Database design
-
- <img
-    width="400"
-    src="./docs/drawsql.png"
-    alt="Draw SQL"
-  /> 
-
-## Flowchart
-
-<img
-    width="400"
-    src="./docs/tickitz.png"
-    alt="Draw SQL"
-  />
 
 ## TO DO:
- * Add JWT
- * Upload Image
- * Mailer
- * etc
+ * as soon as possible
 
 ## Made with ❤
 
