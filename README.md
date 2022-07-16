@@ -7,6 +7,7 @@
  * CRYPTOJS
  * MAIL WITH SENDINBLUE
  * Logger with winston
+ * Multer ( Upload Image )
  * etc
 
 ## Documentation
