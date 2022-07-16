@@ -16,6 +16,7 @@
 
 
 ## TO DO:
+ * Cloudinary
  * as soon as possible
 
 ## Made with ❤
