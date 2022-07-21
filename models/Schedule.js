@@ -26,6 +26,30 @@ const get = async (req, res) => {
     })
 }
 
+const getByidMovie = async (req, res) => {
+    return new Promise((resolve, reject) => {
+        db.query(`SELECT a.*,b.id,b.name_cinema,b.address_cinema,b.image_cinema,c.* from schedules as a JOIN cinemas AS b ON b.id = a.id_cinema INNER JOIN movie AS c ON c.id = a.id_movie  WHERE a.id_movie=${req.params.id}`,
+            (err, results) => {
+                if (err) {
+                    reject({
+                        success: false,
+                        status: 500,
+                        message: 'Error!',
+                        data: err
+                    })
+                } else {
+                    resolve({
+                        success: true,
+                        status: 200,
+                        message: 'successfully get data',
+                        data: results
+                    })
+                }
+            }
+        )
+    })
+}
+
 
 const add = async (req, res) => {
     return new Promise((resolve, reject) => {
@@ -145,6 +169,7 @@ const remove = async (req, res) => {
 
 module.exports = {
     get,
+    getByidMovie,
     add,
     update,
     remove

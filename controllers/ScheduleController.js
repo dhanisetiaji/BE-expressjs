@@ -28,6 +28,15 @@ const addSchedule = async (req, res) => {
     }
 }
 
+const getScheduleByIdMovie = async (req, res) => {
+    try {
+        const result = await schedules.getByidMovie(req, res)
+        return res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).json(error)
+    }
+}
+
 const updateSchedule = async (req, res) => {
     try {
         const result = await schedules.update(req, res)
@@ -57,6 +66,7 @@ const removeSchedule = async (req, res) => {
 module.exports = {
     getSchedule,
     addSchedule,
+    getScheduleByIdMovie,
     updateSchedule,
     removeSchedule
 }

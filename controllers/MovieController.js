@@ -37,13 +37,16 @@ const addMovie = async (req, res) => {
 
 const updateMovie = async (req, res) => {
     try {
+
         let reqModified = {
             ...req,
         }
         if (req.file) {
-            reqModified = {
-                ...req,
-                body: { ...req.body, image: req.file.filename }
+            if (req.file !== null && req.file !== '') {
+                reqModified = {
+                    ...req,
+                    body: { ...req.body, image: req.file.filename }
+                }
             }
         }
         const result = await Movie.update(reqModified, res)

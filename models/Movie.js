@@ -151,24 +151,31 @@ const update = async (req, res) => {
                 let prevData = {
                     ...results[0],
                     release_date: results[0].release_date.toISOString().split('T')[0],
-                    image: results[0].image,
                     ...req.body
+                }
+                if (req.body.image === '') {
+                    prevData = {
+                        ...prevData,
+                        image: results[0].image
+                    }
                 }
                 //delete image if change
                 // console.log('first:', results[0].image, 'second:', req.body.image)
-                if (results[0].image !== req.body.image) {
-                    fs.unlink(`uploads/${results[0].image}`, (err) => {
-                        if (err) {
-                            reject({
-                                success: false,
-                                status: 500,
-                                message: err,
-                            })
+                if (req.body.image !== '' && !req.body.image) {
+                    if (results[0].image !== req.body.image) {
+                        fs.unlink(`uploads/${results[0].image}`, (err) => {
+                            if (err) {
+                                reject({
+                                    success: false,
+                                    status: 500,
+                                    message: err,
+                                })
+                            }
+                        })
+                        prevData = {
+                            ...prevData,
+                            image: req.file.filename
                         }
-                    })
-                    prevData = {
-                        ...prevData,
-                        image: req.file.filename
                     }
                 }
 
